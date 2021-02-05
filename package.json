@@ -5,6 +5,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "html-webpack-plugin": "^5.0.0",
     "webpack": "^5.20.2",
     "webpack-cli": "^4.5.0"
   },
