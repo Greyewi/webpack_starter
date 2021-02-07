@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
+
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
   },
@@ -17,4 +18,13 @@ module.exports = {
       filename: 'index.html',
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
+    ],
+  }
 }
