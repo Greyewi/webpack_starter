@@ -25,6 +25,14 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
+      {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.ico$/],
+        type: 'asset/resource',
+      },
+      {
+        test: /\.svg$/,
+        type: 'asset/inline',
+      },
     ],
   }
 }
