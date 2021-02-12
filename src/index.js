@@ -1,4 +1,5 @@
 import Dragon from './shared/images/Dragon.svg'
+import './style.scss'
 
 class WorldName {
   #name
