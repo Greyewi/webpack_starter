@@ -18,10 +18,11 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.20.2",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.js",
-    "start": "cross-env NODE_ENV=development webpack serve --config ./webpack.dev.js"
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.prod.js",
+    "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.dev.js"
   }
 }
